@@ -1,0 +1,48 @@
+.sell {
+    padding-top: 364px;
+    padding-bottom: 116px;
+  &__h1 {
+    color: $white;
+    @include font(57px, 400, 60px, 0%);
+    font-family: "Inter", sans-serif;
+  }
+  &__text {
+    color: $grey;
+    font-family: "Inter", sans-serif;
+    @include font(18px, 400, 28px, 0%);
+  }
+  &__container {
+    display: flex;
+    gap: 16px;
+  }
+  &__offer {
+    background-color: $violet;
+    border: none;
+    border-radius: 100px;
+    color: $belizna;
+    padding: 14px 34px;
+    font-family: "Inter", sans-serif;
+    @include font(16px, 400, 24px, 0%);
+    transition: transform ease 0.3s;
+    &:hover {
+        transform: scale(0.95);
+        cursor: pointer;
+        background-color: rgb(140, 85, 165);
+    }
+  }
+  &__work {
+    background-color: #e4d8ccc4;
+    border: none;
+    border-radius: 100px;
+    color: $belizna;
+    padding: 14px 34px;
+    font-family: "Inter", sans-serif;
+    @include font(16px, 400, 24px, 0%);
+    transition: transform ease 0.3s;
+    &:hover {
+        transform: scale(0.95);
+        cursor: pointer;
+        background-color: rgba(141, 181, 207, 0.514);
+    }
+  }
+}

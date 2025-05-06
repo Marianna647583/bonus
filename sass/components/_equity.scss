@@ -1,0 +1,14 @@
+.equity {
+  display: flex;
+  gap: 100px;
+  &__h1 {
+    color: $black;
+    @include font(54px, 400, 58px, 0%);
+    font-family: "Inter", sans-serif;
+  }
+  &__text {
+    color: $black;
+    @include font(16px, 400, 22px, 0%);
+    font-family: "Inter", sans-serif;
+  }
+}

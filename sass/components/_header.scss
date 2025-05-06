@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 25px;
+  &__list {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $white;
+  }
+  &__span {
+    display: none;
+  }
+}
+@media (max-width: 678px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+    &__div {
+      display: none;
+    }
+    &__span span {
+      display: block;
+      background-color: $white;
+      height: 3px;
+      width: 30px;
+    }
+  }
+}
+.back-image {
+  background-image: url(../../images/back-image1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

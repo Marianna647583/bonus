@@ -1,1 +1,14 @@
 @import "./untils/colors";
+@import "./untils/mixins";
+@import "./components/header";
+@import "./components/sell";
+@import "./components/equity";
+body {
+  margin: 0;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
