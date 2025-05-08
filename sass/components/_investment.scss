@@ -1,0 +1,34 @@
+.investment {
+  display: flex;
+  background-color: $backcolor;
+  padding-top: 125px;
+  padding-bottom: 100px;
+  &__container {
+    display: flex;
+    gap: 12px;
+  }
+  &__elipse {
+    border-radius: 100%;
+    background-color: $lightviolet;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & span {
+      color: $black;
+      @include font(38px, 400, 24px, 0%);
+      font-family: "Inter", sans-serif;
+    }
+  }
+  &__today {
+    color: $black;
+    @include font(19px, 400, 36px, 0%);
+    font-family: "Inter", sans-serif;
+  }
+  &__h1 {
+    color: $black;
+    @include font(35px, 400, 45px, 0%);
+    font-family: "Inter", sans-serif;
+  }
+}

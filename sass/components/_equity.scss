@@ -1,6 +1,9 @@
 .equity {
+  background-color: $backcolor;
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  padding-top: 75px;
+  padding-bottom: 75px;
   &__h1 {
     color: $black;
     @include font(54px, 400, 58px, 0%);
