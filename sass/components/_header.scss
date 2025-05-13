@@ -8,16 +8,171 @@
     display: flex;
     list-style-type: none;
     gap: 32px;
+    position: relative;
   }
-  &__link {
+  &__link1,
+  &__link2,
+  &__link3,
+  &__link4,
+  &__link5,
+  &__link6 {
     text-decoration: none;
     color: $white;
+  }
+
+  &__link1 {
+    position: relative;
+    &:hover::after {
+      content: "";
+      background-color: $white;
+      width: 124px;
+      height: 2px;
+      border-radius: 2px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      animation: link linear 0.3s;
+    }
+  }
+  &__link2 {
+    position: relative;
+    &:hover::after {
+      content: "";
+      background-color: $white;
+      width: 140px;
+      height: 2px;
+      border-radius: 2px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      animation: link2 linear 0.3s;
+    }
+  }
+  &__link3 {
+    position: relative;
+    &:hover::after {
+      content: "";
+      background-color: $white;
+      width: 74px;
+      height: 2px;
+      border-radius: 2px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      animation: link3 linear 0.3s;
+    }
+  }
+  &__link4 {
+    position: relative;
+    &:hover::after {
+      content: "";
+      background-color: $white;
+      width: 85px;
+      height: 2px;
+      border-radius: 2px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      animation: link3 linear 0.3s;
+    }
+  }
+  &__div {
+    display: flex;
+    gap: 10px;
+  }
+  &__link5 {
+    position: relative;
+    &:hover::after {
+      content: "";
+      background-color: $white;
+      width: 125px;
+      height: 2px;
+      border-radius: 2px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      animation: link3 linear 0.3s;
+    }
+  }
+  &__link6 {
+    position: relative;
+    &:hover::after {
+      content: "";
+      background-color: $white;
+      width: 180px;
+      height: 2px;
+      border-radius: 2px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      animation: link3 linear 0.3s;
+    }
   }
   &__span {
     display: none;
   }
 }
-@media (max-width: 678px) {
+@keyframes link {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes link2 {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes link3 {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes link4 {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes link5 {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes link6 {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
   .header {
     &__nav {
       display: none;

@@ -1,17 +1,27 @@
 .equity {
   background-color: $backcolor;
   display: flex;
-  justify-content: space-between;
+  gap: 116px;
   padding-top: 75px;
   padding-bottom: 75px;
   &__h1 {
     color: $black;
     @include font(54px, 400, 58px, 0%);
     font-family: "Inter", sans-serif;
+    width: 507px;
   }
   &__text {
     color: $black;
     @include font(16px, 400, 22px, 0%);
     font-family: "Inter", sans-serif;
+    width: 452px;
+  }
+  &__img {
+    object-fit: fill;
+  }
+}
+@media (max-width: 768px) {
+  .equity {
+    flex-direction: column;
   }
 }

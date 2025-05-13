@@ -1,4 +1,4 @@
-.investment {
+.unlock {
   display: flex;
   gap: 116px;
   background-color: $backcolor;
@@ -8,9 +8,9 @@
     display: flex;
     gap: 12px;
   }
-  &__elipse {
+  &__elipse3 {
     border-radius: 100%;
-    background-color: $lightviolet;
+    background-color: $lightgreen;
     width: 75px;
     height: 75px;
     display: flex;
@@ -31,7 +31,7 @@
     color: $black;
     @include font(35px, 400, 45px, 0%);
     font-family: "Inter", sans-serif;
-    width: 500px;
+    width: 490px;
   }
   &__expand {
     position: relative;
@@ -62,11 +62,11 @@
     color: $black;
     @include font(14px, 400, 22px, 0%);
     font-family: "Inter", sans-serif;
-    width: 494px;
+    width: 485px;
   }
 }
 @media(max-width:768px) {
-  .investment {
+  .unlock {
   flex-direction: column;
   }
 }

@@ -5,6 +5,7 @@
     color: $white;
     @include font(57px, 400, 60px, 0%);
     font-family: "Inter", sans-serif;
+    width: 838px;
   }
   &__text {
     color: $grey;
@@ -43,6 +44,13 @@
         transform: scale(0.95);
         cursor: pointer;
         background-color: rgba(141, 181, 207, 0.514);
+    }
+  }
+}
+@media(max-width:768px) {
+  .sell {
+    &__container {
+      flex-direction: column;
     }
   }
 }

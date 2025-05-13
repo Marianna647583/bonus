@@ -1,0 +1,26 @@
+.house {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color: $black;
+    padding-top: 118px;
+    padding-bottom: 153px;
+    &__h3 {
+        color: $white;
+        @include font(36px, 400, 46px, 0.01em);
+        font-family: "Inter", sans-serif;
+    }
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 52px;
+        padding: 0;
+    }
+    &__link {
+        color: $lightviolet;
+        text-decoration: none;
+        @include font(20px, 400, 28px, 0%);
+        font-family: "Inter", sans-serif;
+    }
+}
