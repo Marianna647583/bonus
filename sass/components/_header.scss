@@ -78,7 +78,7 @@
   }
   &__div {
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
   &__link5 {
     position: relative;
@@ -180,12 +180,19 @@
     &__div {
       display: none;
     }
-    &__span span {
-      display: block;
+    &__span {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      gap: 5px;
+      & span {
+      
       background-color: $white;
       height: 3px;
       width: 30px;
     }
+    }
+    
   }
 }
 .back-image {
